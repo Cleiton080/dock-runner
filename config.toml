@@ -1,0 +1,16 @@
+[[containers]]
+
+token = ""
+count = 3
+ephemeral = true
+
+  [containers.repository]
+
+  name = "das-toolbox"
+  owner = "singnet"
+
+  [[containers.volumes]]
+
+  hostPath = "/home/ubuntu/.cache/das"
+  containerPath = "/home/ubuntu/.cache"
+
