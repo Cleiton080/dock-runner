@@ -3,14 +3,15 @@
 token = ""
 count = 3
 ephemeral = true
+platform = "linux/arm64"
 
   [containers.repository]
 
-  name = "das-toolbox"
-  owner = "singnet"
+  name = ""
+  owner = ""
 
   [[containers.volumes]]
 
-  hostPath = "/home/ubuntu/.cache/das"
+  hostPath = "/home/ubuntu/.cache"
   containerPath = "/home/ubuntu/.cache"
 

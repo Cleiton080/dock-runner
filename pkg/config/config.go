@@ -15,9 +15,17 @@ type Config struct {
 	Containers []Container
 }
 
+type PlatformType string
+
+const (
+	PlatformLinuxArm64 PlatformType = "linux/arm64"
+	PlatformLinuxAmd64 PlatformType = "linux/amd64"
+)
+
 type Container struct {
 	Token      string
 	Count      int32
+	Platform   PlatformType
 	Ephemeral  bool
 	Repository ContainerRepository
 	Volumes    []ContainerVolume
